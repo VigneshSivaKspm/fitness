@@ -1,0 +1,14 @@
+.contact-page{background:#f7f7f7;padding:28px 0 56px}
+.company{ text-align:center; color:#4a4f55; }
+.company h1{ margin:0 0 8px; color:#2b2f33; font-size:34px; font-weight:800 }
+.company ul{ list-style:none; padding:0; margin:0 }
+.company li{ margin:8px 0 }
+.contact-callout h2{ margin:26px 0 16px; color:#2d3136; font-size:22px }
+
+.contact-form{ max-width:820px; margin:0 auto }
+.contact-form .row{ display:flex; gap:16px; margin-bottom:12px }
+.contact-form .row.two input{ flex:1 }
+.contact-form input, .contact-form textarea{ width:100%; border:1px solid #b9bfc6; background:#fff; border-radius:8px; padding:12px 14px; font-size:14px; color:#222 }
+.contact-form textarea{ resize:vertical }
+.submit{ margin-top:8px; background:#c7baad; color:#222; border:none; padding:10px 18px; border-radius:8px; font-weight:600; cursor:pointer }
+@media (max-width:700px){ .contact-form .row{ flex-direction:column } }

@@ -1,0 +1,10 @@
+.contact{background:#f3f3f3;padding:28px 0 56px}
+.contact-title{margin:0 0 16px;color:#2b2f33;font-size:28px;font-weight:800}
+.contact-form{max-width:820px}
+.row{display:flex;gap:16px;margin-bottom:12px}
+.row.two .field{flex:1}
+.field{flex:1}
+.field input,.field textarea{width:100%;border:1px solid #b9bfc6;background:#fff;border-radius:8px;padding:12px 14px;font-size:14px;color:#222}
+.field textarea{resize:vertical}
+.contact-submit{margin-top:10px;background:#c7baad;color:#222;border:none;padding:10px 18px;border-radius:8px;font-weight:600;cursor:pointer}
+@media (max-width:700px){.row{flex-direction:column}}
