@@ -1,9 +1,11 @@
-.hero{position:relative;min-height:420px;display:flex;align-items:center;background-image:url('https://images.unsplash.com/photo-1517963628607-235ccdd5476b?q=80&w=1600&auto=format&fit=crop');background-size:cover;background-position:center}
+.hero{position:relative;min-height:420px;display:flex;align-items:center;background-image:url('/images/hero-bg.webp');background-size:cover;background-position:center}
 .hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.35)}
-.hero-content{position:relative;z-index:1;color:#fff}
+.hero::before{content:'';position:absolute;inset:0;background:var(--grad-hero);mix-blend-mode:screen;opacity:.55}
+.hero-content{position:relative;z-index:1;color:var(--text)}
 .eyebrow{font-size:12px;letter-spacing:1.2px;font-weight:600;background:rgba(0,0,0,.35);display:inline-block;padding:8px 12px;border-radius:4px;margin-bottom:12px}
 .hero-title{font-size:42px;line-height:1.2;max-width:820px;margin:0 0 20px 0}
-.cta{background:#d6c8b7;border:none;color:#222;padding:10px 18px;border-radius:8px;font-weight:600;cursor:pointer}
+.cta{background:var(--grad-offer);border:none;color:var(--primary-contrast);padding:10px 18px;border-radius:9999px;font-weight:700;cursor:pointer;box-shadow:0 6px 16px rgba(124,58,237,0.25)}
+.cta:hover{filter:brightness(1.06)}
 
 /* Mobile tweaks: add comfortable side padding and adjust heading size */
 @media (max-width: 768px){

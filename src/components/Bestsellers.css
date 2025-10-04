@@ -1,0 +1,23 @@
+/* Section wrapper */
+.bestsellers{background:#f3f4f6;padding:24px 0 34px}
+.bs-title{font-size:28px;color:#1f2937;margin:6px 0 16px}
+
+/* Grid */
+.bs-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+@media (max-width: 1200px){ .bs-grid{grid-template-columns:repeat(4,1fr)} }
+@media (max-width: 900px){ .bs-grid{grid-template-columns:repeat(3,1fr)} }
+@media (max-width: 640px){ .bs-grid{grid-template-columns:repeat(2,1fr)} }
+
+/* Card */
+.bs-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;display:flex;flex-direction:column}
+.bs-media{height:170px;padding:12px;display:flex;align-items:center;justify-content:center}
+.bs-media img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.bs-body{padding:10px 12px 6px}
+.bs-name{display:inline-block;color:#1f2937;font-size:14px;text-decoration:underline}
+.bs-price{color:#111827;font-weight:600;margin-top:6px}
+.bs-footer{padding:10px 12px 12px}
+
+/* Quantity (reuse styles close to Catalog) */
+.qty{display:flex;align-items:center;justify-content:space-between;border:1px solid #e5e7eb;border-radius:8px;height:38px}
+.qty-btn{width:42px;height:36px;background:#fff;border:none;font-size:18px;color:#111827}
+.qty-value{flex:1;text-align:center}

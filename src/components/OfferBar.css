@@ -1,1 +1,2 @@
-.offer-bar{background:#d1c0aa;color:#4b3f32;text-align:center;padding:12px 0;font-weight:500}.offer-bar .sep{margin:0 10px;opacity:.8}
+.offer-bar{background:var(--grad-offer);color:var(--primary-contrast);text-align:center;padding:12px 0;font-weight:700}
+.offer-bar .sep{margin:0 10px;opacity:.85;color:var(--muted)}

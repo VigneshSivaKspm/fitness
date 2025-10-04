@@ -1,25 +1,26 @@
 import './TopCategories.css'
+import { Link } from 'react-router-dom'
 
 const categories = [
   {
     title: 'Balance Trainers',
-    img: 'https://images.unsplash.com/photo-1599050751791-5a9c3e39fb4d?q=80&w=1200&auto=format&fit=crop',
+    img: '/images/Category/BalanceTrainers.webp',
   },
   {
     title: 'Barbell & Dumbbell Sets',
-    img: 'https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1200&auto=format&fit=crop',
+    img: '/images/Category/BarbellDumbbellSets.webp',
   },
   {
     title: 'Bodybars',
-    img: 'https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1200&auto=format&fit=crop',
+    img: '/images/Category/Bodybars.webp',
   },
   {
     title: 'Elliptical Trainers',
-    img: 'https://images.unsplash.com/photo-1583454110551-21f2fa2edc4b?q=80&w=1200&auto=format&fit=crop',
+    img: '/images/Category/ElipticalTrainers.webp',
   },
   {
     title: 'Exercise bikes',
-    img: 'https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1200&auto=format&fit=crop',
+    img: '/images/Category/ExerciseBikes.webp',
   },
 ]
 
@@ -30,7 +31,7 @@ export default function TopCategories(){
         <h3 className="topcats-title">Shop our top categories</h3>
         <div className="topcats-row">
           {categories.map((c) => (
-            <a key={c.title} className="cat-card" href="#">
+            <Link key={c.title} className="cat-card" to={`/catalog?category=${encodeURIComponent(c.title)}`}>
               <div className="cat-media">
                 <img src={c.img} alt={c.title} />
                 <div className="red-glow" />
@@ -39,7 +40,7 @@ export default function TopCategories(){
                 <span className="cat-name">{c.title}</span>
                 <span className="arrow">→</span>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

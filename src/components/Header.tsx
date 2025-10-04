@@ -1,5 +1,5 @@
 import './Header.css'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 
 export default function Header(){
@@ -27,9 +27,9 @@ export default function Header(){
         </button>
 
         <nav id="primary-navigation" className={`nav ${open ? 'open' : ''}`}>
-          <Link className="nav-link active" to="/" onClick={closeMenu}>Home</Link>
-          <a className="nav-link" href="#catalog" onClick={closeMenu}>Catalog</a>
-          <Link className="nav-link" to="/contact" onClick={closeMenu}>Contact</Link>
+          <NavLink className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`} to="/" onClick={closeMenu}>Home</NavLink>
+          <NavLink className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`} to="/catalog" onClick={closeMenu}>Catalog</NavLink>
+          <NavLink className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`} to="/contact" onClick={closeMenu}>Contact</NavLink>
         </nav>
 
         <div className="actions">

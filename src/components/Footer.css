@@ -1,9 +1,10 @@
-.footer{background:#1f262c;color:#cfd6dd;padding:22px 0 28px;margin-top:auto}
+.footer{background:var(--footer-bg);color:var(--muted);padding:22px 0 28px;margin-top:auto}
 .footer .quick{ text-align:center; padding:10px 0 18px }
-.footer h4{ margin:0 0 6px; color:#e6edf4; font-size:16px }
-.footer .links a{ color:#dfe6ed; opacity:.9 }
-.sep{ border:0; border-top:1px solid rgba(255,255,255,0.12); margin:10px 0 }
+.footer h4{ margin:0 0 6px; color:var(--text); font-size:16px }
+.footer .links a{ color:var(--link); opacity:.95 }
+.sep{ border:0; border-top:1px solid var(--border); margin:10px 0 }
 .meta{ display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap }
 .policies{ display:flex; gap:14px; flex-wrap:wrap }
-.policies a{ color:#cfd6dd; opacity:.9 }
-.copy{ color:#cfd6dd }
+.policies a{ color:var(--muted); opacity:.95 }
+.policies a:hover{ color:var(--text) }
+.copy{ color:var(--muted) }

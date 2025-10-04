@@ -6,7 +6,7 @@ export default function FeatureSection(){
       <div className="container">
         <div className="feature-card">
           <div className="feature-image">
-            <img src="https://images.unsplash.com/photo-1596357395104-5b6dbdb93de5?q=80&w=1400&auto=format&fit=crop" alt="Modern gym interior with equipment" />
+            <img src="/images/Fitness-A-Lifestyle.webp" alt="Modern gym interior with equipment" />
           </div>
           <div className="feature-content">
             <h3>Fitness as a Lifestyle: Why Quality Equipment Matters</h3>
