@@ -7,12 +7,14 @@ import ContactPage from './pages/ContactPage.tsx'
 import CatalogPage from './pages/CatalogPage'
 import ProductDetailsPage from './pages/ProductDetailsPage'
 import Footer from './components/Footer'
+import SearchOverlay from './components/SearchOverlay'
 
 function App() {
   return (
     <div className="site">
       <AnnouncementBar />
       <Header />
+      <SearchOverlay />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/catalog" element={<CatalogPage />} />
