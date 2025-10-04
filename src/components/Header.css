@@ -1,1 +1,42 @@
-.header{background:#3a4048;color:#fff}.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}.brand{letter-spacing:2px;font-weight:700;font-size:18px}.nav{display:flex;gap:24px}.nav-link{color:#e9edf3;text-decoration:none;font-weight:500}.nav-link.active{text-decoration:underline}.actions{display:flex;gap:10px}.icon-btn{background:transparent;border:none;color:#e9edf3;padding:6px;cursor:pointer}
+.header { background:#3a4048; color:#fff; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; height:64px; position:relative; }
+.brand { letter-spacing:2px; font-weight:700; font-size:18px; }
+
+/* Desktop nav */
+.nav { display:flex; gap:24px; }
+.nav-link { color:#e9edf3; text-decoration:none; font-weight:500; }
+.nav-link.active { text-decoration:underline; }
+
+.actions { display:flex; gap:10px; }
+.icon-btn { background:transparent; border:none; color:#e9edf3; padding:6px; cursor:pointer; }
+
+/* Burger button hidden on desktop */
+.menu-toggle { display:none; background:transparent; border:none; color:#e9edf3; padding:8px; cursor:pointer; }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .header-inner { height:auto; padding:10px 0; }
+
+  .menu-toggle { display:inline-flex; align-items:center; justify-content:center; }
+
+  /* Stack brand and actions with menu button; push actions to the end */
+  .header-inner { display:grid; grid-template-columns:auto 1fr auto; gap:8px; }
+  .brand { grid-column: 1 / 2; padding: 0 10px; }
+  .menu-toggle { grid-column: 3 / 4; }
+  .actions { grid-column: 3 / 4; display:none; }
+
+  /* Nav becomes dropdown */
+  .nav {
+    position: absolute;
+    left: 0; right: 0;
+    top: 100%;
+    background: #3a4048;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    z-index: 10;
+  }
+  .nav.open { display: flex; }
+  .nav-link { padding: 12px 24px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+}
