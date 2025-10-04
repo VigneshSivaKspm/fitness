@@ -9,7 +9,17 @@ export default function Footer(){
         <div className="quick">
           <h4>Quick links</h4>
           <div className="links">
-            <Link to="/">Search</Link>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault()
+                const anyWin = window as any
+                if(typeof anyWin.openSearch === 'function') anyWin.openSearch()
+                else window.dispatchEvent(new Event('open-search'))
+              }}
+            >
+              Search
+            </a>
           </div>
         </div>
       </div>
